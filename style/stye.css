@@ -42,19 +42,16 @@ header {
     margin-bottom: 5rem;
 }
 
-.cont-speaker-view > div {
-    margin-right: .5em;
-}
-
-.btn {
+header > a {
     background-color: rgb(94, 94, 94);
     display: inline-block;
-    line-height: 1.7em;
     font-size: .8em;
     border-radius: .2em;
     vertical-align: middle;
-    padding: .1em .2em;
-    
+    line-height: 1.7rem;   
+    margin-right: .5em;
+    padding-left: .5em;
+    padding-right: .5em;
 }
 
 /* Main */
@@ -71,13 +68,30 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: .1em .5em;
-
+    
 }
 
+.cont-singola-immagine {
+    position: relative;
+}
+
+.cont-singola-immagine > div {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    background-color: rgba(44, 44, 44, .2);
+    line-height: 1.8rem;
+    padding-left: .5em;
+    padding-right: .5em;
+    vertical-align: middle;
+    font-size: .8rem;
+}
 .cont-immagini-zoom > div > img {
     width: 200px;
     object-fit: contain;
     object-position: center;
+    
 }
 
 /* Footer */
@@ -89,7 +103,6 @@ main {
      align-items: center;
      background-color: rgb(44, 44, 44);
  }
-
 ul {
     list-style: none;
     text-align: center;
@@ -105,8 +118,8 @@ ul > li > a {
     color: rgb(238, 238, 238);
     display: inline-block;
     vertical-align: middle;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
     line-height: 1.2rem;
 }
 
@@ -122,17 +135,16 @@ li > a > i {
     padding-right: .1em;
 }
 
-.cont-end-meeting {
-    background-color:  rgb(94, 94, 94);
-    display: flex;
+footer > a {
+    background-color: rgb(94, 94, 94);
     flex-basis: 7%;
-    height: 100%
-}
-
-.cont-end-meeting > a {
-    margin: auto;
+    height: 100%;
+    display: flex;
     font-size: .8rem;
     color: red;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .fa-share-square {
